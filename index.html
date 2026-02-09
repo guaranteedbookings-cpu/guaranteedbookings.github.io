@@ -516,6 +516,114 @@
         .animate-pulse {
             animation: pulse-gold 2s infinite;
         }
+        /* Mobile Fixes */
+@media (max-width: 968px) {
+    .hero-content {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .hero-headline {
+        font-size: 48px !important;
+        line-height: 1;
+    }
+    
+    .hero-subhead {
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .btn-primary {
+        width: 100%;
+        max-width: 400px;
+        font-size: 16px;
+        padding: 18px 20px;
+    }
+    
+    .hero-visual img {
+        max-width: 300px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    h2 {
+        font-size: 36px !important;
+    }
+    
+    .cards-grid,
+    .tools-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .stats-glow {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .calculator {
+        padding: 30px 20px;
+    }
+    
+    .calculator-result {
+        font-size: 48px;
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item,
+    .timeline-item:nth-child(odd) {
+        flex-direction: row;
+        text-align: left;
+        padding-left: 80px;
+    }
+    
+    .timeline-content {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    .checklist-gold li {
+        font-size: 20px;
+        padding-left: 50px;
+    }
+    
+    .numbered-gold li {
+        font-size: 18px;
+        padding-left: 70px;
+    }
+    
+    .numbered-gold li::before {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-headline {
+        font-size: 36px !important;
+    }
+    
+    .badge-metal {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+    
+    .page {
+        padding: 30px 20px;
+    }
+    
+    .gold-line {
+        width: 100px;
+    }
+    
+    .hero-visual img {
+        max-width: 250px;
+    }
+}
     </style>
 </head>
 <body>
