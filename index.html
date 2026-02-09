@@ -533,7 +533,7 @@ document.getElementById('leadCaptureForm').addEventListener('submit', async func
     btn.disabled = true;
     
     try {
-        const res = await fetch('https://https://n8n-self-hosted-2-6i3h.onrender.com/webhook/lead-capture/', {
+        const res = await fetch('https://n8n-self-hosted-2-6i3h.onrender.com/webhook/lead-capture/', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({email: email, source: 'blueprint_landing', timestamp: new Date().toISOString()})
