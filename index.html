@@ -646,6 +646,29 @@
         box-sizing: border-box !important;
     }
 }
+        @media (max-width: 968px) {
+    .stats-glow,
+    .stats-luxury {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    
+    .stat-box,
+    .stat-box-luxury {
+        padding: 30px 20px !important;
+    }
+    
+    .stat-number {
+        font-size: 48px !important;
+    }
+    
+    /* Fix text overflow */
+    .stat-box div,
+    .stat-box-luxury div {
+        word-wrap: break-word;
+        font-size: 14px !important;
+    }
+}
     </style>
 </head>
 <body>
